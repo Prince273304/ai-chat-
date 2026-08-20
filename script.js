@@ -1,8 +1,7 @@
 let prompt=document.querySelector("#prompt")
 let chatContainer=document.querySelector(".chat-container")
 //const API_KEY = "AIzaSyDlX0uHhd4FjSaHRBtQ7F-dK7Ej2HMwQIY"
-const Api_Url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=AQ.Ab8RN6KIOalYoIRFluyvtGsV6OMmoO8j-Nw6CIFGJpBJJ3dZfA`;
-
+const Api_Url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=AQ.Ab8RN6J5T49fnLlxh3jfKW2R1m2cizWMxSYOy-xKUeOtP4WOAg`;
 let user={
     data:null,
 }
@@ -73,6 +72,8 @@ generateResponse(aiChatBox)
 },600)
 
 }
+
+
 prompt.addEventListener("keydown",(e)=>{
     if(e.key==="Enter"){
         handleChatResponse(prompt.value)   
